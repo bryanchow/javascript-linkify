@@ -83,7 +83,7 @@ window.linkify = (function(){
     MAILTO = "mailto:",
     EMAIL = "(?:" + MAILTO + ")?[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@" + HOST_OR_IP + QUERY_FRAG + "(?!\\w)",
     
-    URI_RE = new RegExp( "(?:" + URI1 + "|" + URI2 + "|" + EMAIL + ")", "ig" ),
+    URI_RE = new RegExp( "(?:" + EMAIL + "|" + URI1 + "|" + URI2 + ")", "ig" ),
     SCHEME_RE = new RegExp( "^" + SCHEME, "i" ),
     
     quotes = {
